@@ -25,7 +25,7 @@
         },
         "SESSION": {
             "description": "Pyrogram string session.",
-            "value": ""
+            "value": "BQFpwMIALPNdwAWzbnCFYWF__tncSy9ihmBOVFtxmpIoMLaWiBHHDGRwlXFO0qqhKNA2zjUKGCSvqhq0WUtrLoxe8vSNep5-_TrRcnfcpQJyfsoYEBLdRZeQbOYNojzje7wWUId3rzpj1wfJdaojVSi9VrfhONWSegQiXss-sESYuJIwFogO7jUoWZobNkjzaYqaA-LHHoJS4T1P1pVE69IBA1y-Y5hVY_jQwpEcmfR8igX6Keyu3C8J1bZwnN0sGy8mVQqJTWBz6jBPguh3Xo2R7n77IMPOvmzIrQm4di2gfeDYOBBkYhw4xbHCC-HUHUXAXoZyp3F8_pMLOTeL3H7EcC1JYgAAAAFtY1pxAA"
         },
         "AUTH": {
             "description": "User ID of Bot owner.",
