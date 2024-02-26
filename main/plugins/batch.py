@@ -1,13 +1,8 @@
-#Tg:MaheshChauhan/DroneBots
-#Github.com/Vasusen-code
 
-"""
-Plugin for both public & private channels!
-"""
 
 import time, os, asyncio
 
-from .. import bot as Drone
+from .. import bot as Sakil
 from .. import userbot, Bot, AUTH
 from .. import FORCESUB as fs
 from main.plugins.pyroplug import get_bulk_msg
@@ -26,14 +21,14 @@ ft = f"To use this bot you've to join @{fs}."
 
 batch = []
 
-@Drone.on(events.NewMessage(incoming=True, from_users=AUTH, pattern='/cancel'))
+@Sakil.on(events.NewMessage(incoming=True, from_users=AUTH, pattern='/cancel'))
 async def cancel(event):
     if not event.sender_id in batch:
         return await event.reply("No batch active.")
     batch.clear()
     await event.reply("Done.")
     
-@Drone.on(events.NewMessage(incoming=True, from_users=AUTH, pattern='/batch'))
+@Sakil.on(events.NewMessage(incoming=True, from_users=AUTH, pattern='/batch'))
 async def _batch(event):
     if not event.is_private:
         return
@@ -43,7 +38,7 @@ async def _batch(event):
         return       
     if event.sender_id in batch:
         return await event.reply("You've already started one batch, wait for it to complete you dumbfuck owner!")
-    async with Drone.conversation(event.chat_id) as conv: 
+    async with Sakil.conversation(event.chat_id) as conv: 
         if s != True:
             await conv.send_message("Send me the message link you want to start saving from, as a reply to this message.", buttons=Button.force_reply())
             try:
