@@ -9,31 +9,31 @@
     ],
     "repository": "https://github.com/Mr-Sakil/SRCB",
     "website": "",
-    "success_url": "https://t.me/Korean_drama_in_hindi_dub_YKD",
+    "success_url": "https://t.me/Vip_Sakil_Bio",
     "env": {
         "API_HASH": {
             "description": "Your API HASH from my.telegram.org",
-            "value": "1fe99d220289087574c44c38f408d3e6"
+            "value": ""
         },
         "API_ID": {
             "description": "Your API ID from my.telegram.org",
-            "value": "23707842"
+            "value": ""
         },
         "BOT_TOKEN": {
             "description": "Bot token, get it from @BotFather.",
-            "value": "6325577627:AAFiY2CR6vUQCv_vlG4yIjg4nTedYVLsBNg"
+            "value": ""
         },
         "SESSION": {
             "description": "Pyrogram string session.",
-            "value": "BQFpwMIALPNdwAWzbnCFYWF__tncSy9ihmBOVFtxmpIoMLaWiBHHDGRwlXFO0qqhKNA2zjUKGCSvqhq0WUtrLoxe8vSNep5-_TrRcnfcpQJyfsoYEBLdRZeQbOYNojzje7wWUId3rzpj1wfJdaojVSi9VrfhONWSegQiXss-sESYuJIwFogO7jUoWZobNkjzaYqaA-LHHoJS4T1P1pVE69IBA1y-Y5hVY_jQwpEcmfR8igX6Keyu3C8J1bZwnN0sGy8mVQqJTWBz6jBPguh3Xo2R7n77IMPOvmzIrQm4di2gfeDYOBBkYhw4xbHCC-HUHUXAXoZyp3F8_pMLOTeL3H7EcC1JYgAAAAFtY1pxAA"
+            "value": ""
         },
         "AUTH": {
             "description": "User ID of Bot owner.",
-            "value": "6024212623"
+            "value": ""
         },
         "FORCESUB": {
             "description": "Username name of public channel without using '@'.",
-            "value": "Korean_drama_in_hindi_dub_YKD"
+            "value": ""
         }
     },
     "buildpacks": [

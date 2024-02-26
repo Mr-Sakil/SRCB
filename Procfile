@@ -1,1 +1,1 @@
-Drone: python -m main
+Sakil: python -m main
