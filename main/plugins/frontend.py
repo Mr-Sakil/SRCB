@@ -1,8 +1,7 @@
-#Github.com/Vasusen-code
 
 import time, os
 
-from .. import bot as Drone
+from .. import bot as Sakil
 from .. import userbot, Bot
 from .. import FORCESUB as fs
 from main.plugins.pyroplug import get_msg
@@ -17,7 +16,7 @@ ft = f"To use this bot you've to join @{fs}."
 
 message = "Send me the message link you want to start saving from, as a reply to this message."
 
-@Drone.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
+@Sakil.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
 async def clone(event):
     if event.is_reply:
         reply = await event.get_reply_message()
@@ -40,10 +39,10 @@ async def clone(event):
             await edit.edit(q)
             return
         if 't.me/' in link:
-            await get_msg(userbot, Bot, Drone, event.sender_id, edit.id, link, 0)
+            await get_msg(userbot, Bot, Sakil, event.sender_id, edit.id, link, 0)
     except FloodWait as fw:
-        return await Drone.send_message(event.sender_id, f'Try again after {fw.x} seconds due to floodwait from telegram.')
+        return await Sakil.send_message(event.sender_id, f'Try again after {fw.x} seconds due to floodwait from telegram.')
     except Exception as e:
         print(e)
-        await Drone.send_message(event.sender_id, f"An error occurred during cloning of `{link}`\n\n**Error:** {str(e)}")
+        await Sakil.send_message(event.sender_id, f"An error occurred during cloning of `{link}`\n\n**Error:** {str(e)}")
     
